@@ -256,6 +256,10 @@ h1 {
     background-color: var(--dark-violet)
 }
 
+.main__link-area__element__copy:focus {
+    background-color: var(--dark-violet)
+}
+
 .main__h2 {
     text-align: center;
     color: var(--dark-violet)
