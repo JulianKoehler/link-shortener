@@ -119,17 +119,16 @@ h1 {
 }
 
 .header__eye-catcher__illustration {
-    max-height: 330px;
-    max-width: 480px;
+    max-width: 90vw;
     overflow: hidden;
     position: absolute;
-    right: -8rem;
+    right: 0;
     top: 2rem
 }
 
 .header__eye-catcher__illustration__svg {
-    max-height: 330px;
-    max-width: 480px
+    height: 330px;
+    width: 480px
 }
 
 .header__eye-catcher__slogan {
