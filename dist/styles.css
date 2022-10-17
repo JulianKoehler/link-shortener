@@ -50,6 +50,10 @@ h1 {
     display: none
 }
 
+.clicked {
+    background-color: var(--dark-violet) !important
+}
+
 .error-message {
     color: var(--red);
     margin-top: .3rem;
@@ -249,14 +253,10 @@ h1 {
     font-size: 16px;
     padding: .85rem;
     border-radius: 8px;
-    transition: all .15s
+    transition: all .35s
 }
 
 .main__link-area__element__copy:active {
-    background-color: var(--dark-violet)
-}
-
-.main__link-area__element__copy:focus {
     background-color: var(--dark-violet)
 }
 
