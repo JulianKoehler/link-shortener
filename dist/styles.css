@@ -119,9 +119,9 @@ h1 {
 }
 
 .header__eye-catcher__illustration__svg {
-    margin-left: -5rem;
+    margin-left: -4rem;
     margin-top: -3rem;
-    transform: scale(0.8)
+    transform: scale(0.75)
 }
 
 .header__eye-catcher__slogan {
