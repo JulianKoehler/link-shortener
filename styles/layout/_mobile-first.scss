@@ -66,17 +66,16 @@
 
 
     &__eye-catcher {
-        position: relative;
 
         &__illustration {
-            max-width: 90vw;
             overflow: hidden;
-            position: absolute;
-            right: 0;
-            top: 2rem;
 
             &__svg {
-                max-height: 330px;
+                // width: 480px;
+                // height: 320px;
+                margin-left: -5rem;
+                margin-top: -3rem;
+                transform: scale(0.7);
             }
         }
 
@@ -85,7 +84,7 @@
             text-align: center;
             font-size: 42px;
             color: var(--dark-violet);
-            margin-top: 25rem;
+            margin-top: -3rem;
         }
 
         &__hookup {
@@ -222,7 +221,19 @@
         margin-top: 7rem;
         text-align: center;
         position: relative;
-        z-index: 10;
+        z-index: 99;
+
+        &::after {
+            content: "";
+            width: 10px;
+            height: 100px;
+            background-color: var(--cyan);
+            position: absolute;
+            bottom: -100px;
+            left: 50%;
+            transform: translateX(-50%);
+            z-index: 2;
+        }
 
         &__icon {
             background-color: var(--dark-violet);
@@ -249,17 +260,7 @@
             font-size: 16px;
         }
 
-        &::after {
-            content: "";
-            width: 10px;
-            height: 100px;
-            background-color: var(--cyan);
-            position: absolute;
-            top: 284px;
-            left: 50%;
-            transform: translateX(-50%);
-            z-index: -1;
-        }
+        
     }
 
 
