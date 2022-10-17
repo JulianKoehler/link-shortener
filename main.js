@@ -56,10 +56,17 @@ const copyToClipboard = event => {
     listOfLinks.forEach(link => {
         if (link.id == btnID) { // Using only == instead of === since the ID of the DOM Element is a number type and the ID from the JS Object is a string type
             navigator.clipboard.writeText(link.short)
-                .then(() => event.target.textContent = "Copied!")
+                .then(() => {
+                    event.target.textContent = "Copied!";
+                    event.target.classList.add("clicked");
+                })
                 .catch(err => alert("Sorry! Try again."))
             delay(3000)
-            .then(() => event.target.textContent = "Copy") // setting Button text back to "Copy"
+            .then(() => {
+                // setting Button text back to "Copy" and removing purple color
+                event.target.textContent = "Copy";
+                event.target.classList.remove("clicked");
+            }) 
         }
     })
 }
