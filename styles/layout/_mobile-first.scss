@@ -198,6 +198,10 @@
                 &:active {
                     background-color: var(--dark-violet);
                 }
+                
+                &:focus {
+                    background-color: var(--dark-violet);
+                }
             }
         }
     }
