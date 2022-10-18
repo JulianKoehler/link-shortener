@@ -29,11 +29,10 @@ const isValidURL = input => {
     return !!pattern.test(input);
 }
 
-const throwError = (domElement) => {
+const throwError = domElement => {
     linkInput.classList.add("error");
     noInput.classList.add("hide")
     notALink.classList.add("hide")
-    console.log(notALink)
     domElement.classList.remove("hide");
 }
 
@@ -109,12 +108,16 @@ const shortenURL = async () => {
     try {
         const reponse = await fetch(URL);
         const result = await reponse.json();
-        listOfLinks.push(new LinkElement(result.result))
+        listOfLinks.unshift(new LinkElement(result.result))
         createLinkElement()
         saveToLocalStorage(listOfLinks);
     } catch (err) {
         console.log("Leider ist ein Fehler aufgetreten", err);
     }
+}
+
+const openMobileNav = () => {
+    mobileNav.classList.toggle("show-nav");
 }
 
 createLinkElement();
