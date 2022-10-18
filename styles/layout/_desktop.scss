@@ -1,0 +1,114 @@
+@use "../util/" as util;
+
+@include util.breakpoint(large) {
+    .header {
+        margin-bottom: 7rem;
+
+        &__top {
+            padding-inline: 6rem;
+
+            &__logo {
+                margin-right: 1.5rem;
+            }
+
+            &__menu-btn {
+                display: none;
+            }
+
+            &__nav {
+                background: none;
+                position: static;
+                transform: translateX(0);
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+
+                padding: 0;
+
+                &__links {
+                    display: flex;
+                    border: none;
+                }
+
+                &__links li {
+                    margin: 0 1rem;
+
+                    &:hover {
+
+                    }
+                }
+
+                &__links li a {
+                    color: var(--gray);
+                    font-size: 16px;
+                }
+
+                &__register {
+                    color: var(--gray);
+                    padding: 0;
+                    display: flex;
+                    align-items: center;
+
+                    &__login {
+                        margin: 0;
+                        font-size: 16px;
+                    }
+
+                    &__sing-up {
+                        padding: 0.8rem 2rem;
+                        margin-left: 2rem;
+                        font-size: 16px;
+                        transition: opacity 0.25s;
+
+                        &:hover {
+                            opacity: 0.6;
+                        }
+                    }
+                }
+            }
+        }
+
+        &__eye-catcher {
+            display: flex;
+            flex-direction: row-reverse;
+            justify-content: space-between;
+            align-items: flex-end;
+
+            &__illustration {
+
+                &__svg {
+                    float: right;
+                    transform: scale(0.8);
+                    margin: 2rem -9rem 0 0;
+                }
+            }
+
+            &__slogan {
+                text-align: left;
+                padding-left: 6rem;
+                margin-top: 4rem;
+                font-size: 60px;
+            }
+
+            &__hookup {
+                text-align: left;
+                padding-left: 6rem;
+                margin: 0;
+            }
+
+            &__get-started {
+                padding-left: 6rem;
+                justify-content: flex-start;
+
+                &__btn {
+                    border-radius: 30px;
+                    padding: 1rem 2.5rem;
+                }
+            }
+        }
+    }
+
+    .desktop-left-wrapper {
+        max-width: 50%;
+    }
+}
