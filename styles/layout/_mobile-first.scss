@@ -4,6 +4,10 @@
     --burger-width: 28px
 }
 
+.w-full {
+    width: 100vw;
+}
+
 .hide {
     display: none;
 }
@@ -13,7 +17,7 @@
 }
 
 .show-nav {
-    transform: translateX(-50%) !important;
+    transform: translateX(-135%) !important;
 }
 
 .error-message {
@@ -35,7 +39,7 @@
     width: 100%;
     display: flex;
     flex-direction: column;
-    align-items: space-between;
+    overflow: hidden;
 
     &__top {
         padding-inline: 2rem;
@@ -43,6 +47,7 @@
         justify-content: space-between;
         align-items: flex-end;
         margin-top: 2rem;
+        position: relative;
 
         &__menu-btn {
             height: 3px;
@@ -76,8 +81,7 @@
             padding-inline: 1.5rem;
             position: absolute;
             top: 5.5rem;
-            left: 50%;
-            transform: translateX(80%);
+            left: 120%;
             text-align: center;
             border-radius: 8px;
             transition: all 0.5s;
