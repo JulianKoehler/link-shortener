@@ -3,8 +3,8 @@
 class LinkElement {
     constructor(data) {
         this.short = data.short_link,
-            this.original = data.original_link,
-            this.id = Math.floor(Math.random() * 1_000_000)
+        this.original = data.original_link,
+        this.id = Math.floor(Math.random() * 1_000_000)
     }
 }
 
